@@ -1,0 +1,44 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: monospace;
+    font-size: 10px;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start
+}
+.container{
+    flex-direction: column;
+    max-width: 200px;
+    display: flex;
+    margin: 1rem;
+}
+
+.image img{
+    border: 1px solid rgba(0, 0, 0, 0.055);
+    max-width: 200px;
+    border-radius: 0.5rem;
+}
+
+.container .details button{
+    display: block;
+    margin: 10px auto;
+    padding: 10px 30px;    
+}
+
+.container .details{
+    font-size: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(243 243 243 / 34%);
+    border-radius: 0.5rem;
+}
+
