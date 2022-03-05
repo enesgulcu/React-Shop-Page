@@ -4,15 +4,18 @@ import Data from './Data.json'
 import ProductsCSS from './Products.css'
 
 function Products() {
-  return (
-    <div className='products'>
-    {Data.map((product)=>{      
+  const [data, setData] = useState(Data);
+
+  return (    
+    <div className='products'>    
+    {data.map((product)=>{      
         return <div key={product.id} className="container">
             <div className="image">
-                <img src={product.image} alt="image" />
+                <img src={product.image} alt="image"/>
             </div>
             <div className="details">
                 <h5>{product.title}</h5>
+                
                 <span>{product.catagories}</span>
                 <h4>{product.price}</h4>
                 <button>Add Basket</button>

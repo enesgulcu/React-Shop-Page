@@ -36,9 +36,19 @@ body{
 }
 
 .container .details{
-    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end; 
+    align-items: flex-start;
+    font-size: 0.5rem;
     padding: 0.5rem;
-    background-color: rgb(243 243 243 / 34%);
     border-radius: 0.5rem;
+    width: 12rem;
+    height: 10rem;
+}
+
+.container button{
+    align-self: flex-end;
 }
 

@@ -5,7 +5,7 @@ import Products from './Products';
 function Catagories() {
   return (
     <div>
-        <Products/>
+        
     </div>
   )
 }
