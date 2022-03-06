@@ -3,119 +3,119 @@
         "id":1,
         "title":"Casper Notebook",
         "price":2400.00,
-        "catagories":1,
+        "catagories":"Leptop",
         "image":"https://cdn.dsmcdn.com/ty251/product/media/images/20211119/18/754673/319137148/1/1_org_zoom.jpg"
     },
     {
         "id":2,
         "title":"Toshiba PC",
         "price":1330.00,
-        "catagories":1,
+        "catagories":"Leptop",
         "image":"https://cdn.dsmcdn.com/ty87/product/media/images/20210403/03/f1e2ddc3/17670200/1/1_org_zoom.jpg"
     },
     {
         "id":3,
         "title":"ASUS ROG",
         "price":6750.50,
-        "catagories":1,
+        "catagories":"Leptop",
         "image":"https://cdn.dsmcdn.com/ty335/product/media/images/20220217/14/51701806/389670138/1/1_org_zoom.jpg"
     },
     {
         "id":4,
         "title":"Apple iPhone 11",
         "price":6750.50,
-        "catagories":2,
+        "catagories":"Phone",
         "image":"https://cdn.dsmcdn.com/ty251/product/media/images/20211119/17/737712/113335703/1/1_org_zoom.jpg"
     },
     {
         "id":5,
         "title":"Oppo A54 128GB",
         "price":3411.50,
-        "catagories":2,
+        "catagories":"Phone",
         "image":"https://cdn.dsmcdn.com/ty251/product/media/images/20211119/17/737712/113335703/1/1_org_zoom.jpg"
     },
     {
         "id":6,
         "title":"Apple iPhone13",
         "price":7850.20,
-        "catagories":2,
+        "catagories":"Phone",
         "image":"https://cdn.dsmcdn.com/ty201/product/media/images/20211018/15/151663688/254912378/1/1_org_zoom.jpg"
     },
     {
         "id":7,
         "title":"Pratik 1200 Süpürge 500w",
         "price":750.00,
-        "catagories":3,
+        "catagories":"Vaccum Cleaner",
         "image":"https://cdn.dsmcdn.com/ty152/product/media/images/20210729/16/113745122/63355555/1/1_org_zoom.jpg"
     },
     {
         "id":8,
         "title":"Roborock S5 Max Vacuum Cleaner",
         "price":475.00,
-        "catagories":3,
+        "catagories":"Vaccum Cleaner",
         "image":"https://cdn.dsmcdn.com/ty325/product/media/images/20220207/16/46309369/63683840/1/1_org_zoom.jpg"
     },
     {
         "id":9,
         "title":"Arzum Elektrikli Süpürge",
         "price":355.50,
-        "catagories":3,
+        "catagories":"Vaccum Cleaner",
         "image":"https://cdn.dsmcdn.com/ty254/product/media/images/20211122/13/455103/135474251/1/1_org_zoom.jpg"
     },
     {
         "id":10,
         "title":"Erkek Kahverengi Oversize Kadife",
         "price":47.00,
-        "catagories":4,
+        "catagories":"T-shirt",
         "image":"https://cdn.dsmcdn.com/ty323/product/media/images/20220205/7/44681819/229452610/1/1_org_zoom.jpg"
     },
     {
         "id":11,
         "title":"Rıver Erkek Siyah Nakışlı",
         "price":36.00,
-        "catagories":4,
+        "catagories":"T-shirt",
         "image":"https://cdn.dsmcdn.com/ty344/product/media/images/20220225/17/58468880/93225221/1/1_org_zoom.jpg"
     },
     {
         "id":12,
         "title":"Kahverengi Cep Detaylı Jeans",
         "price":144.00,
-        "catagories":5,
+        "catagories":"Jeans",
         "image":"https://cdn.dsmcdn.com/ty330/product/media/images/20220215/20/50835863/228245490/2/2_org_zoom.jpg"
     },
     {
         "id":13,
         "title":"Mavi Yırtık Detaylı Jeans",
         "price":121.50,
-        "catagories":5,
+        "catagories":"Jeans",
         "image":"https://cdn.dsmcdn.com/ty331/product/media/images/20220215/17/50769353/74784943/6/6_org_zoom.jpg"
     },
     {
         "id":14,
         "title":"Siyah Büzgülü Elbise",
         "price":244.50,
-        "catagories":6,
+        "catagories":"Dress",
         "image":"https://cdn.dsmcdn.com/ty163/product/media/images/20210824/17/122155097/31973746/5/5_org_zoom.jpg"
     },
     {
         "id":15,
         "title":"Miss Perry Kadın Kolu Volanlı",
         "price":299.00,
-        "catagories":6,
+        "catagories":"Dress",
         "image":"https://cdn.dsmcdn.com/ty345/product/media/images/20220303/14/61994040/402825584/5/5_org_zoom.jpg"
     },
     {
         "id":16,
         "title":"Sneakers AM0010",
         "price":855.50,
-        "catagories":7,
+        "catagories":"Shoes",
         "image":"https://cdn.dsmcdn.com/ty45/product/media/images/20210104/21/45907783/88434177/1/1_org_zoom.jpg"
     },  
     {
         "id":17,
         "title":"Scarpa Phantom 6000",
         "price":972.00,
-        "catagories":7,
+        "catagories":"Shoes",
         "image":"https://cdn.dsmcdn.com/ty172/product/media/images/20210909/12/127923733/117835258/1/1_org_zoom.jpg"
     }
 
