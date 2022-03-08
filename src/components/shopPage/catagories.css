@@ -1,0 +1,32 @@
+a{
+    font-size: 1rem;
+    color: black;
+    font-weight: bold;
+    text-decoration: none !important;
+    
+}
+
+ul li{
+    margin: 0px;
+    margin-top: 1rem;
+    width: 250px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgba(26, 26, 26, 0.267);
+    padding: 1rem;
+    box-shadow: 0px 5px 6px -4px rgba(217, 120, 255, 0.918);
+    cursor: pointer;
+    
+    
+}
+
+ul li:hover{
+    background-color: antiquewhite;
+    color: black;
+    box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.24);
+    transition: 0.6s;
+    
+}

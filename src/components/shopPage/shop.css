@@ -1,0 +1,29 @@
+.nav_up{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 1rem 5rem;
+    box-shadow: 0px 5px 6px -4px rgba(217, 120, 255, 0.918);
+}
+
+.searchConsole{
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.nav_up a{
+    font-size: 3rem;
+    font-family: system-ui;
+    color: white;
+    text-decoration: none;    
+}
+
+.under_box{
+    display: flex;
+}
+
+.catagori_box{
+    margin-left: 1rem;
+}
