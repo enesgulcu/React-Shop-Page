@@ -30,3 +30,7 @@ ul li:hover{
     transition: 0.6s;
     
 }
+
+.clickList{
+    background-color: rgb(0, 255, 42);
+}
