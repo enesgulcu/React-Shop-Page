@@ -6,7 +6,7 @@ a{
     
 }
 
-ul li{
+.catagoriLi{
     margin: 0px;
     margin-top: 1rem;
     width: 250px;
@@ -31,7 +31,5 @@ ul li:hover{
     
 }
 
-.clickList{
-    background-color: antiquewhite;
-}
+
 

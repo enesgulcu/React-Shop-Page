@@ -1,8 +1,20 @@
 import React from 'react'
-
-function Basket() {
+import BasketCss from './Basket.css'
+function Basket({basket}) {
+  
   return (
-    <div>Basket</div>
+    <>
+    <ul>
+        {
+          basket.map((product, index)=>{
+            return <li key={index} className='basketLi' >
+              {product.title}
+              ${product.price}
+            </li>
+          })
+        }
+      </ul>
+    </>
   )
 }
 

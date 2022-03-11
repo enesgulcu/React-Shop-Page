@@ -1,13 +1,19 @@
 import React from 'react'
 import {useState, useEffect} from 'react';
 import ProductsCSS from './Products.css'
+import Basket from './Basket.js'
 
-function Products({Product}) {
-
+function Products({Product, basket, setBasket}) {
 
   const titleShort = (title) => {
     return title.substring(0, 13);
   }
+
+  const addBasket = (product) =>{
+    setBasket([...basket, product])
+    
+  }
+
 
 
   return (    
@@ -22,7 +28,7 @@ function Products({Product}) {
                 
                 <span>{product.catagories}</span>
                 <h4>{product.price}</h4>
-                <button>Add Basket</button>
+                <button onClick={(e)=>addBasket(product)} >Add Basket</button>
             </div>
         </div>
     })}

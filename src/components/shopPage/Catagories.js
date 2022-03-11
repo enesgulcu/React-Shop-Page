@@ -23,7 +23,7 @@ function Catagories({allData, setFilterCatagories}) {
       <ul>
       {
         uniqueArray.map((veri, index)=>{
-         return <li  className={activeLi === veri ? "clickList" : ""} key={index} onClick={(e)=>choosing(veri,e)}>
+         return <li  className={`catagoriLi ${activeLi === veri ? "clickList" : ""}`} key={index} onClick={(e)=>choosing(veri,e)}>
          {veri}
          </li>
        })}

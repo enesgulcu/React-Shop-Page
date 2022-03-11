@@ -1,0 +1,13 @@
+.basketLi{    
+    margin: 0px;
+    margin-top: 1rem;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgba(26, 26, 26, 0.267);
+    padding: 1rem;
+    box-shadow: 0px 5px 6px -4px rgb(217 120 255 / 92%);
+    cursor: pointer;
+}
