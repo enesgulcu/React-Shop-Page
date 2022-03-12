@@ -29,20 +29,20 @@ function Shop() {
   return (
     <div>
         <div className="container-fluid">
-          <div className="row">
+          <div className="row main">
             <div className="col-12 bg-dark nav_up">
-              <a href="#">LOGO</a>
+              <a href="#" className='logoClass'>LOGO</a>
               <div className='nav_right_side'>
               <input type="text" className='searchConsole' placeholder='Your key Word' onChange={onChangeImput}/>
               <div className='basket_icon' onClick={()=>setBasketDisplay(!basketDisplay)}>
                 <h4 className='basketNumber'>{basket.length}</h4>
                 <FaShoppingBasket className='shopping-basket'/>
-                </div>
-                  <div className={`${basketDisplay ? 'BasketDetails' : 'd-none'}`}> 
-                  <Basket basket = {basket}/>                
-                </div>              
-              </div>
+                </div>             
+              </div>              
             </div>
+            <div className={`${basketDisplay ? 'BasketDetails' : 'd-none'}`}> 
+                  <Basket basket = {basket}/>                
+                </div> 
             <div className='under_box'>
             <div className="catagori_box">
               <div className='catagories'>

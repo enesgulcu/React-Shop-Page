@@ -8,8 +8,18 @@ function Basket({basket}) {
         {
           basket.map((product, index)=>{
             return <li key={index} className='basketLi' >
-              {product.title}
-              ${product.price}
+            <div className='basketImage'>
+              <img src={product.image} alt="img" />
+            </div>
+              <div className='Basketinfo'>
+              <div className="basket_title">
+                {product.title}
+              </div>
+              <div className="basket_price">
+                <h5>Price:</h5>${product.price}
+              </div>          
+            
+            </div>              
             </li>
           })
         }
