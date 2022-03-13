@@ -18,9 +18,40 @@ a{
     border: 1px solid rgba(26, 26, 26, 0.267);
     padding: 1rem;
     box-shadow: 0px 5px 6px -4px rgba(217, 120, 255, 0.918);
-    cursor: pointer;
+    cursor: pointer; 
     
-    
+}
+
+.catagoriLiSelect{
+    margin: 0px;
+    margin-top: 1rem;
+    width: 250px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgba(26, 26, 26, 0.267);
+    padding: 1rem;
+
+    box-shadow: 0px 5px 6px -4px rgba(217, 120, 255, 0.918);
+    cursor: pointer;     
+}
+
+.clickList{
+    margin: 0px;
+    margin-top: 1rem;
+    width: 250px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgba(26, 26, 26, 0.267);
+    padding: 1rem;
+    background-color: antiquewhite;
+    box-shadow: 0px 5px 6px -4px rgba(217, 120, 255, 0.918);
+    cursor: pointer;  
 }
 
 ul li:hover{

@@ -13,7 +13,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-   
+    
     align-items: flex-start;
     
 }
@@ -54,7 +54,7 @@ body{
 
 .container button{
     align-self: flex-end;
-    box-shadow: 0px 5px 6px -4px rgba(217, 120, 255, 0.918); 
+    box-shadow: 0px 5px 6px -4px rgba(225, 148, 255, 0.918); 
     border: 1px solid rgba(41, 41, 41, 0.164);
     border-radius: 1rem; 
     font-size: 0.7rem;  
@@ -63,9 +63,9 @@ body{
 
 .container button:hover{
     background-color: blanchedalmond;
-    transition: 0.4s;
-    font-size: 0.9rem;
-    border: 1px solid rgba(2, 2, 2, 0.698);
+    transition: 0.3s;
+    font-size: 0.8rem;
+    border: 1px solid rgba(0, 0, 0, 0.438);
     
 }
 

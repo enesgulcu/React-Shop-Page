@@ -15,6 +15,7 @@ function Catagories({allData, setFilterCatagories}) {
     setFilterCatagories(veri);
     setActiveLi(veri);
   }
+  
 
   
 
