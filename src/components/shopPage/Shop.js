@@ -5,6 +5,11 @@ import Catagories from './Catagories';
 import Data from './Data.json'
 import shop from './shop.css'
 import Basket from './Basket';
+import {BrowserRouter as Router, Routes, Route, Link, Outlet, NavLink, useParams} from 'react-router-dom'
+import Home from './Home';
+import About from './About';
+import Blog from './Blog';
+
 import { FaShoppingBasket } from "react-icons/fa";
 
 function Shop() {
@@ -28,11 +33,21 @@ function Shop() {
  
   return (
       <div>
+      <Router>
+        <Routes>
+
+
+          <Route path={"/"} element={<Home/>}>
+            <Route path={"about"} element={<About/>}/>
+            <Route path={"blog"} element={<Blog/>}/>
+          </Route>
+        </Routes>
+      </Router>
+      
         <div className="container-fluid">
           <div className="row main">
             <div className="col-12 bg-dark nav_up">
               <a href="#" className='logoClass'>LOGO</a>
-
               <div className='nav_right_side'>
                 <input type="text" className='searchConsole' placeholder='Your key Word' onChange={onChangeImput}/>
 
