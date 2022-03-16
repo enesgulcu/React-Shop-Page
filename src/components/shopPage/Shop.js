@@ -9,6 +9,7 @@ import {BrowserRouter as Router, Routes, Route, Link, Outlet, NavLink, useParams
 import Home from './Home';
 import About from './About';
 import Blog from './Blog';
+import Post from './Post';
 
 import { FaShoppingBasket } from "react-icons/fa";
 
@@ -35,12 +36,11 @@ function Shop() {
       <div>
       <Router>
         <Routes>
-
-
-          <Route path={"/"} element={<Home/>}>
-            <Route path={"about"} element={<About/>}/>
-            <Route path={"blog"} element={<Blog/>}/>
-          </Route>
+        <Route path={"/"} element={<Home/>}>
+          <Route path='blog' element={<Blog/>}/>
+          <Route path={"blog/:postId"} element={<Post/>}/>
+        </Route>
+          
         </Routes>
       </Router>
       
