@@ -1,6 +1,5 @@
 import React from 'react'
-import {useState, useEffect} from 'react';
-import Main from './Main';
+
 import NavBarCSS from './NavBar.css'
 import {BrowserRouter as Router, Routes, Route, Link, Outlet, NavLink, useParams} from 'react-router-dom'
 function NavBar() {

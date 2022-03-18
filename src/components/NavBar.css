@@ -5,7 +5,7 @@
 }
 
 .main-navbar{    
-    background-color: #343A40; 
+    background-color: rgb(255, 157, 0);
     
 }
 .main-navbar ul{
@@ -20,10 +20,10 @@
     text-decoration: none;
     list-style: none;
     text-align: center;
-    width: 10rem;
+    width: 5rem;
     margin-right: 1rem;
     padding: 1rem;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, 0.794);
     border-radius: 1rem;
 
 
@@ -31,15 +31,13 @@
 
 .main-navbar li{
     color: white;
-    font-size: 2rem;
-}
-li:hover a {
-    color: inherit;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 .main-navbar li:hover{
     color: #343A40;
-    font-size: 2.1rem;
+    font-weight: 500;
     transition: 0.2s;
     cursor: pointer;
 }
