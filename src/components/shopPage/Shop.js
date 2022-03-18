@@ -5,11 +5,7 @@ import Catagories from './Catagories';
 import Data from './Data.json'
 import shop from './shop.css'
 import Basket from './Basket';
-import {BrowserRouter as Router, Routes, Route, Link, Outlet, NavLink, useParams} from 'react-router-dom'
-import Home from './Home';
-import About from './About';
-import Blog from './Blog';
-import Post from './Post';
+
 
 import { FaShoppingBasket } from "react-icons/fa";
 
@@ -33,22 +29,11 @@ function Shop() {
   }; 
  
   return (
-      <div>
-      <Router>
-        <Routes>
-        <Route path={"/"} element={<Home/>}>
-          <Route path='blog' element={<Blog/>}/>
-          <Route path={"blog/:postId"} element={<Post/>}/>
-        </Route>
-          
-        </Routes>
-      </Router>
-      
+      <div>    
         <div className="container-fluid">
           <div className="row main">
-            <div className="col-12 bg-dark nav_up">
-              <a href="#" className='logoClass'>LOGO</a>
-              <div className='nav_right_side'>
+            <div className="col-12 bg-dark nav_up">              
+              <div className='nav_right_side col-12'>
                 <input type="text" className='searchConsole' placeholder='Your key Word' onChange={onChangeImput}/>
 
                 <div className='basket_icon' onClick={()=>setBasketDisplay(!basketDisplay)}>
@@ -60,7 +45,7 @@ function Shop() {
             </div>
             <div className={`${basketDisplay ? 'BasketDetails' : 'd-none'}`}> 
                   <Basket basket = {basket}/>                
-                </div> 
+            </div> 
             <div className='under_box'>
               <div className="catagori_box">
                 <div className='catagories'>

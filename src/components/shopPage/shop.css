@@ -68,7 +68,7 @@
 
 .nav_right_side{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: row-reverse;
     align-items: center;
 }
