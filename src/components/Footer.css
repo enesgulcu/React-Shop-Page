@@ -23,7 +23,7 @@
 }
 
 .footer-part ul li{
-    text-decoration: none;
+  
     list-style-type: none;
     text-align: center;
     color: white;
@@ -32,7 +32,7 @@
 }
 
 .footer-part ul li:hover{
-    text-decoration: none;
+    
     list-style-type: none;
     text-align: center;
     color: white;
