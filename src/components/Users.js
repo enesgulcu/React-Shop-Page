@@ -2,18 +2,31 @@ import React from 'react'
 import axios from 'axios'
 import { useState, useEffect } from 'react';
 import UsersCSS from './Users.css'
+
+import { IoIosCheckmark } from "react-icons/io";
+
+
+
+
 import {BrowserRouter as Router, Routes, Route, Link, Outlet, NavLink, useParams} from 'react-router-dom'
 function Users() {
 
   const [users, setUsers] = useState([]);
 
+  const randomMoney = () =>{
+    const money = {money: Math.floor(Math.random() * (10000 - 500)) + 500};
+    return money;
+  }
+
   // get 5.000 user's info from api
   const getData = async () => {
     try {
-        await axios('https://randomuser.me/api/?nat=tr')
+        await axios('https://randomuser.me/api/')
         .then((response)=>{
-          console.log(response.data.results);
-          setUsers(response.data.results);  
+          //we added money, inside api data from "randomMoney" function...
+          Object.assign(response.data.results[0],randomMoney())
+
+          setUsers(response.data.results);           
         })
     }    
     catch (err) {
@@ -46,10 +59,15 @@ function Users() {
                   </h5>   
                   <div className="city">City: {user.location.city}</div>
                   <div className="Phone">Phone: {user.phone}</div>
+                  <div className="Money">Wallet: <span>${user.money}</span> </div>
                   <div className="userName">user Name: {user.login.username}</div>     
                   <div className="userPass">Password: {user.login.password}</div>                
                 </div>
                 <button className='changeUser' onClick={getData}>Change User</button>
+                <h5 className='warning'>Click the button below to select the profile!</h5>
+                <button className='select-user-button'><IoIosCheckmark className='select-user'/></button>
+                
+
               </div>
             </li>
           })}
