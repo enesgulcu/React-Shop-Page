@@ -11,7 +11,7 @@ function NavBar() {
         <div className="row col-12">
           <ul>
             <Link to="/"> <li> Main </li> </Link> 
-            <Link to="blog"> <li> Blog </li> </Link> 
+            <Link to="users"> <li> Users </li> </Link> 
           </ul>
         </div>
       </div>

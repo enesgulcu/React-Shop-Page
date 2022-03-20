@@ -12,21 +12,21 @@ function Footer() {
             <ul>
                 <h3>Pages</h3>
                 <Link to="/"> <li> Main </li> </Link> 
-                <Link to="blog"> <li> Blog </li> </Link> 
+                <Link to="users"> <li> Users </li> </Link> 
             </ul>
         </div>
         <div className="col-4 footer-middle-side footer-part">
             <ul>
                 <h3>Pages</h3>
                 <Link to="/"> <li> Main </li> </Link> 
-                <Link to="blog"> <li> Blog </li> </Link> 
+                <Link to="users"> <li> Users </li> </Link> 
             </ul>
         </div>
         <div className="col-4 footer-right-side footer-part">
             <ul>
                 <h3>Pages</h3>
                 <Link to="/"> <li> Main </li> </Link> 
-                <Link to="blog"> <li> Blog </li> </Link> 
+                <Link to="users"> <li> Users </li> </Link> 
             </ul>
         </div>
           

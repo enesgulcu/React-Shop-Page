@@ -1,7 +1,7 @@
 import React from 'react'
 import Shop from './shopPage/Shop'
 import NavBar from './NavBar'
-import Blog from './shopPage/Blog'
+import Users from './Users'
 import Footer from './Footer'
 
 import {BrowserRouter as Router, Routes, Route, Link, Outlet, NavLink, useParams} from 'react-router-dom'
@@ -14,7 +14,7 @@ function Main() {
         <NavBar/>
           <Routes>
               <Route exact path={"/"} element={<Shop/>}/>  
-              <Route path={"/blog"} element={<Blog/>}/>                                    
+              <Route path={"/users"} element={<Users/>}/>                                    
           </Routes>
           <Footer/>
         </Router>
