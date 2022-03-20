@@ -54,13 +54,14 @@ a{
     cursor: pointer;  
 }
 
-ul li:hover{
+.catagoriLi:hover{
     background-color: antiquewhite;
     color: black;
     box-shadow: 0px 0px 18px 1px rgba(0, 0, 0, 0.24);
     transition: 0.6s;
     
 }
+
 
 
 
