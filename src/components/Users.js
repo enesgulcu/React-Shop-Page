@@ -9,16 +9,22 @@ import { IoIosCheckmark } from "react-icons/io";
 
 
 import {BrowserRouter as Router, Routes, Route, Link, Outlet, NavLink, useParams} from 'react-router-dom'
-function Users() {
+function Users({users, setUsers, setActiveUser, activeUser, setchosedUser, chosedUser}) {
 
-  const [users, setUsers] = useState([]);
+  // when choose users, under function is trigirred
+  const userControl = (user) =>{
+    setActiveUser(true);
+    setchosedUser(user);
+  
+  }
 
+ //define money between 500-10.000$ 
   const randomMoney = () =>{
     const money = {money: Math.floor(Math.random() * (10000 - 500)) + 500};
     return money;
   }
 
-  // get 5.000 user's info from api
+  // get random user's info from api
   const getData = async () => {
     try {
         await axios('https://randomuser.me/api/')
@@ -65,7 +71,7 @@ function Users() {
                 </div>
                 <button className='changeUser' onClick={getData}>Change User</button>
                 <h5 className='warning'>Click the button below to select the profile!</h5>
-                <button className='select-user-button'><IoIosCheckmark className='select-user'/></button>
+                <button className='select-user-button' onClick={(e)=> userControl(user)}><IoIosCheckmark className='select-user'/></button>
                 
 
               </div>

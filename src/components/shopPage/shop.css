@@ -94,9 +94,46 @@
 
 
 
+.userProfile{
+ 
+    position: absolute;
+}
+
+.userProfileContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.userProfileContainer div{
+    margin-right: 1rem;    
+}
+
+.shop-image img{
+    border-radius: 50%;
+    width: 55px;
+    border: 2px solid #FF9D00;
+}
 
 
 
+.profileDetails h5{
+    color: #FF9D00;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.wallet .money-amount{
+    background-color:rgb(0, 255, 0);
+    padding: 0px 0.7rem;
+    border-radius: 0.5rem;
+}
+
+.wallet h5{
+margin: 0px;
+padding: 0px;
+}
 
 
 

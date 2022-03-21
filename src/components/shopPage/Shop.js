@@ -8,15 +8,16 @@ import Basket from './Basket';
 
 
 import { FaShoppingBasket } from "react-icons/fa";
+import Users from '../Users';
 
-function Shop() {
+function Shop({users, activeUser, setActiveUser}) {
 
   const [data, setData] = useState(Data);
   const [filterCatagories, setFilterCatagories] = useState("All");
   const [textSearch, setTextSearch] = useState("");
   const [basket, setBasket] = useState([])
-
   const [basketDisplay, setBasketDisplay] = useState(false);
+
 
  // Catagories Filter
  // eğer filterCatagories = ALL (hepsini getir) : Değilse => filterCatagories ile data nın eşleşenlerini getirir.
@@ -32,7 +33,23 @@ function Shop() {
       <div>    
         <div className="container-fluid">
           <div className="row main">
-            <div className="col-12 bg-dark nav_up">              
+            <div className="col-12 bg-dark nav_up">   
+              <div className="userProfile">
+              {activeUser ? 
+                <div className="userProfileContainer">
+                  <div className="shop-image" >
+                    <img src={users.picture.medium} alt="" />
+                  </div>
+                  <div className="profileDetails">
+                    <h5>{users.name.first} {users.name.last}</h5>
+                  </div>
+                  <div className="wallet"><h5><span className='money-amount'>${users.money}</span></h5></div>
+
+                </div>                
+                :  <h5>To be able to shop, please select from the user page first.</h5> }    
+                        
+              </div>
+
               <div className='nav_right_side col-12'>
                 <input type="text" className='searchConsole' placeholder='Your key Word' onChange={onChangeImput}/>
 
