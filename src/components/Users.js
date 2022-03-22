@@ -20,7 +20,7 @@ function Users({users, setUsers, setActiveUser, activeUser, setchosedUser, chose
 
  //define money between 500-10.000$ 
   const randomMoney = () =>{    
-    const money = {money: Math.floor(Math.random() * (10000 - 500)) + 500};
+    const money = {money: Math.floor(Math.random() * (20000 - 500)) + 500};
     return money;
   }
 

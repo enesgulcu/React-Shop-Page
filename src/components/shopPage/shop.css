@@ -153,6 +153,10 @@ padding: 0px;
 }
 
 .wallet{
+    background-color: rgba(0, 0, 0, 0.137);
+    padding: 0.2rem 2rem;
+    border-radius: 0.5rem;
+    border: 2px solid #2525253a;
     margin-left: 1rem;
     display: flex;
     flex-direction: column;

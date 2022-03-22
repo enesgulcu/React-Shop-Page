@@ -12,6 +12,7 @@ function NavBar() {
           <ul>
             <Link to="/"> <li> Main </li> </Link> 
             <Link to="users"> <li> Users </li> </Link> 
+            <Link to="basketIn"> <li> Basket </li> </Link> 
           </ul>
         </div>
       </div>

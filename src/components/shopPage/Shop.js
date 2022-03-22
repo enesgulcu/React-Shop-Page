@@ -10,14 +10,14 @@ import Basket from './Basket';
 import { FaShoppingBasket } from "react-icons/fa";
 import Users from '../Users';
 
-function Shop({users, activeUser, setActiveUser}) {
+function Shop({users, activeUser, setActiveUser, setUser_invoice, user_invoice}) {
 
   const [data, setData] = useState(Data);
   const [filterCatagories, setFilterCatagories] = useState("All");
   const [textSearch, setTextSearch] = useState("");
   const [basket, setBasket] = useState([])
   const [basketDisplay, setBasketDisplay] = useState(false);
-  const [user_invoice, setUser_invoice] = useState([])
+  
 
 
 
@@ -36,10 +36,16 @@ function Shop({users, activeUser, setActiveUser}) {
     wallet = userMoney;
     typeof(userMoney) === typeof(1) ? wallet = userMoney : wallet = 0;
     summary = wallet - total;
-    invoice = [wallet , total , summary];   
-  } 
+    invoice = [wallet , total , summary]; 
+    setUser_invoice(invoice);
+  }
+  
 
-  totalPrice();
+  useEffect(() => {
+    totalPrice();      
+  }, [basket])
+  
+  
 
  // Catagories Filter
  // eğer filterCatagories = ALL (hepsini getir) : Değilse => filterCatagories ile data nın eşleşenlerini getirir.
@@ -68,9 +74,9 @@ function Shop({users, activeUser, setActiveUser}) {
                     <h5 className='operation-symbol'>Basket Amount Details</h5>
                     <h5><span className='money-amount'>${users.money}</span>
                     <span className='operation-symbol'>-</span> 
-                    <span className='money-total'>${invoice[1]}</span>
+                    <span className='money-total'>${user_invoice[1]}</span>
                     <span className='operation-symbol'>=</span>  
-                    <span className='money-summary'>${invoice[2]}</span></h5>
+                    <span className='money-summary'>${user_invoice[2]}</span></h5>
                   </div>
 
                 </div>                
@@ -99,6 +105,7 @@ function Shop({users, activeUser, setActiveUser}) {
               </div>  
               <div className="product_box">
                 <div className="prodcuts">
+                
                   <Products Product = {searchFilter} basket = {basket}  setBasket = {setBasket} />
                   
                 </div>

@@ -1,11 +1,14 @@
 import React from 'react'
 import BasketCss from './Basket.css'
 import Shop from './Shop';
+import BasketIn from '../BasketIn';
 import {useState, useEffect} from 'react'
+import {BrowserRouter as Router, Routes, Route, Link, Outlet, NavLink, useParams} from 'react-router-dom'
 function Basket({basket}) {
 
   return (    
     <> 
+    <Link to="/basketIn"> <h5>Go Basket</h5></Link>  
     <ul>
         {
           basket.map((product, index)=>{

@@ -2,6 +2,8 @@ import React from 'react'
 import {useState, useEffect} from 'react';
 import ProductsCSS from './Products.css'
 import Basket from './Basket.js'
+import BasketIn from '../BasketIn';
+import {BrowserRouter as Router, Routes, Route, Link, Outlet, NavLink, useParams} from 'react-router-dom'
 
 function Products({Product, basket, setBasket}) {
 
@@ -13,7 +15,7 @@ function Products({Product, basket, setBasket}) {
     setBasket([...basket, product])
     
   }
-  return (    
+  return (   
     <div className='products'>    
     {Product.map((product)=>{      
         return <div key={product.id} className="container">
@@ -29,6 +31,7 @@ function Products({Product, basket, setBasket}) {
             </div>
         </div>
     })}
+
     </div>
   )
 }
