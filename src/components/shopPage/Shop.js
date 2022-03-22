@@ -17,7 +17,29 @@ function Shop({users, activeUser, setActiveUser}) {
   const [textSearch, setTextSearch] = useState("");
   const [basket, setBasket] = useState([])
   const [basketDisplay, setBasketDisplay] = useState(false);
+  const [user_invoice, setUser_invoice] = useState([])
 
+
+
+  let wallet = 0;
+  let total = 0;  
+  let summary = 0;
+  let invoice = [0,0,0]
+  let userMoney = users.money;
+
+  //calculate basket value and user wallet
+  const totalPrice = ()=>{
+    
+    for(let i = 0; i < basket.length ; i++ ){ 
+      total += basket[i].price;   
+    }
+    wallet = userMoney;
+    typeof(userMoney) === typeof(1) ? wallet = userMoney : wallet = 0;
+    summary = wallet - total;
+    invoice = [wallet , total , summary];   
+  } 
+
+  totalPrice();
 
  // Catagories Filter
  // eğer filterCatagories = ALL (hepsini getir) : Değilse => filterCatagories ile data nın eşleşenlerini getirir.
@@ -28,7 +50,6 @@ function Shop({users, activeUser, setActiveUser}) {
   const onChangeImput = (e) => {
     setTextSearch(e.target.value);        
   }; 
- 
   return (
       <div>    
         <div className="container-fluid">
@@ -43,10 +64,17 @@ function Shop({users, activeUser, setActiveUser}) {
                   <div className="profileDetails">
                     <h5>{users.name.first} {users.name.last}</h5>
                   </div>
-                  <div className="wallet"><h5><span className='money-amount'>${users.money}</span></h5></div>
+                  <div className="wallet">
+                    <h5 className='operation-symbol'>Basket Amount Details</h5>
+                    <h5><span className='money-amount'>${users.money}</span>
+                    <span className='operation-symbol'>-</span> 
+                    <span className='money-total'>${invoice[1]}</span>
+                    <span className='operation-symbol'>=</span>  
+                    <span className='money-summary'>${invoice[2]}</span></h5>
+                  </div>
 
                 </div>                
-                :  <h5>To be able to shop, please select from the user page first.</h5> }    
+                :  <h5 className='title-before-user'>To be able to shop, please select user from the user page first.</h5> }    
                         
               </div>
 
@@ -61,7 +89,7 @@ function Shop({users, activeUser, setActiveUser}) {
               </div>
             </div>
             <div className={`${basketDisplay ? 'BasketDetails' : 'd-none'}`}> 
-                  <Basket basket = {basket}/>                
+                  <Basket basket = {basket} />                
             </div> 
             <div className='under_box'>
               <div className="catagori_box">
@@ -71,7 +99,8 @@ function Shop({users, activeUser, setActiveUser}) {
               </div>  
               <div className="product_box">
                 <div className="prodcuts">
-                  <Products Product = {searchFilter} basket = {basket}  setBasket = {setBasket}/>
+                  <Products Product = {searchFilter} basket = {basket}  setBasket = {setBasket} />
+                  
                 </div>
               </div>
             </div>

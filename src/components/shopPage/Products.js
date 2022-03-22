@@ -13,9 +13,6 @@ function Products({Product, basket, setBasket}) {
     setBasket([...basket, product])
     
   }
-
-
-
   return (    
     <div className='products'>    
     {Product.map((product)=>{      
@@ -27,7 +24,7 @@ function Products({Product, basket, setBasket}) {
                 <h5>{titleShort(product.title)}...</h5>
                 
                 <span>{product.catagories}</span>
-                <h4>{product.price}</h4>
+                <h4>${product.price}</h4>
                 <button onClick={(e)=>addBasket(product)} >Add Basket</button>
             </div>
         </div>

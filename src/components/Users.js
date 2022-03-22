@@ -15,11 +15,11 @@ function Users({users, setUsers, setActiveUser, activeUser, setchosedUser, chose
   const userControl = (user) =>{
     setActiveUser(true);
     setchosedUser(user);
-  
+   
   }
 
  //define money between 500-10.000$ 
-  const randomMoney = () =>{
+  const randomMoney = () =>{    
     const money = {money: Math.floor(Math.random() * (10000 - 500)) + 500};
     return money;
   }
@@ -51,7 +51,7 @@ function Users({users, setUsers, setActiveUser, activeUser, setchosedUser, chose
     <div className='userMain'>
         <ul>
           {users.map((user, index)=>{
-            return <li key={index} className='UserProfile'>
+            return <li key={index} className='UserProfile'>     
               <div className="profile">
 
                 <div className="user-image">
@@ -71,7 +71,11 @@ function Users({users, setUsers, setActiveUser, activeUser, setchosedUser, chose
                 </div>
                 <button className='changeUser' onClick={getData}>Change User</button>
                 <h5 className='warning'>Click the button below to select the profile!</h5>
-                <button className='select-user-button' onClick={(e)=> userControl(user)}><IoIosCheckmark className='select-user'/></button>
+
+                    <Link to="/">
+                    <button className='select-user-button' onClick={(e)=> userControl(user)}><IoIosCheckmark className='select-user'/></button>   
+                    </Link>
+                
                 
 
               </div>
