@@ -12,9 +12,9 @@ function Products({Product, basket, setBasket}) {
   }
 
   const addBasket = (product) =>{
-    setBasket([...basket, product])
-    
+    setBasket([...basket, product])    
   }
+  
   return (   
     <div className='products'>    
     {Product.map((product)=>{      

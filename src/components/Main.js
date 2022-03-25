@@ -12,6 +12,7 @@ function Main() {
   const [users, setUsers] = useState([]); 
   const [chosedUser, setchosedUser] = useState([]); 
   const [user_invoice, setUser_invoice] = useState([]);
+  const [basket, setBasket] = useState([])
  
   return (
     <div>
@@ -23,7 +24,8 @@ function Main() {
           
               <Route exact path={"/"} element={<Shop
               user_invoice={user_invoice} setUser_invoice={setUser_invoice}
-              activeUser={activeUser} setActiveUser={setActiveUser} users={chosedUser} 
+              activeUser={activeUser} setActiveUser={setActiveUser} users={chosedUser}
+              basket = {basket}  setBasket = {setBasket} 
 
               />}/>  
               <Route path={"/users"} element={<Users users={users} setUsers={setUsers} setActiveUser={setActiveUser} activeUser={activeUser} chosedUser={chosedUser} setchosedUser={setchosedUser} />}/> 

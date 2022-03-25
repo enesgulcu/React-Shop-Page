@@ -10,16 +10,13 @@ import Basket from './Basket';
 import { FaShoppingBasket } from "react-icons/fa";
 import Users from '../Users';
 
-function Shop({users, activeUser, setActiveUser, setUser_invoice, user_invoice}) {
+function Shop({users, activeUser, setActiveUser, setUser_invoice, user_invoice, basket, setBasket}) {
 
   const [data, setData] = useState(Data);
   const [filterCatagories, setFilterCatagories] = useState("All");
   const [textSearch, setTextSearch] = useState("");
-  const [basket, setBasket] = useState([])
   const [basketDisplay, setBasketDisplay] = useState(false);
   
-
-
 
   let wallet = 0;
   let total = 0;  
@@ -29,7 +26,6 @@ function Shop({users, activeUser, setActiveUser, setUser_invoice, user_invoice})
 
   //calculate basket value and user wallet
   const totalPrice = ()=>{
-    
     for(let i = 0; i < basket.length ; i++ ){ 
       total += basket[i].price;   
     }
@@ -42,7 +38,9 @@ function Shop({users, activeUser, setActiveUser, setUser_invoice, user_invoice})
   
 
   useEffect(() => {
-    totalPrice();      
+    if(activeUser === true){
+      totalPrice();  
+    }         
   }, [basket])
   
   

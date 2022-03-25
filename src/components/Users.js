@@ -13,9 +13,10 @@ function Users({users, setUsers, setActiveUser, activeUser, setchosedUser, chose
 
   // when choose users, under function is trigirred
   const userControl = (user) =>{
-    setActiveUser(true);
-    setchosedUser(user);
-   
+
+      setActiveUser(true);
+      setchosedUser(user);
+    
   }
 
  //define money between 500-10.000$ 
