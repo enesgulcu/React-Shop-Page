@@ -5,6 +5,7 @@ import Users from './Users'
 import Footer from './Footer'
 import BasketIn from './BasketIn'
 import { useState } from 'react';
+import { MainContext, useContext } from '../context.js';  // import context api datas here
 
 import {BrowserRouter as Router, Routes, Route, Link, Outlet, NavLink, useParams} from 'react-router-dom'
 function Main() {
@@ -13,7 +14,7 @@ function Main() {
   const [chosedUser, setchosedUser] = useState([]); 
   const [user_invoice, setUser_invoice] = useState([]);
   const [basket, setBasket] = useState([])
- 
+  const contextApiData = useContext(MainContext); // take context api datas here
   return (
     <div>
           
